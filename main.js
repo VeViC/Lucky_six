@@ -164,14 +164,14 @@ function startWheel() {
   let bubanjBalls = document.querySelectorAll('.bubanj-balls');
   let i = 0;
   let arrayWheel = [];
-  let newBalls = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48];
   let randomBall;
-  
   uplataVal = uplata.value;
-
+  let newBalls = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+     17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
+      34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48];
+  
   let loopWheel = setInterval(function () {
     randomBall = Math.floor(Math.random() * newBalls.length);
-    number = newBalls[randomBall];
     bubanjBalls[i].innerHTML = newBalls[randomBall];
     arrayWheel.push(bubanjBalls[i].innerHTML);
     newBalls.splice(randomBall, 1);
@@ -217,9 +217,6 @@ function startWheel() {
         let kvota = Math.max.apply(null, givenBall);
         let stringKvota = kvota.toString();
         
-        
-        
-
         info.style.background = '#1CC31C';
         info.style.color = '#DDDDDD';
         info.style.display = 'block';
