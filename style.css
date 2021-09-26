@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #222222;
+}
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.ball {
+width: 80px;
+height: 80px;
+border: 3px solid #646464;
+color: #646464;
+border-radius: 50%;
+font-size: 22px;
+margin: 5px auto;
+text-align: center;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+.ball:hover {
+  color: #DDDDDD;
+}
+.allRed, .allGreen, .allBlue, .allPurple, .allBrown, .allYellow, .allOrange, .allGray {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 8px;
+  left: 8px;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 30px;
+  border-radius: 2px;
+  padding: 6px;
+  background: #DDDDDD;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  display: none;
+  border: 2px solid #DDDDDD;
+  text-shadow: 2px 2px solid #000;
+}
+
+.restart-btn {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-right: 530px;
+}
+
+.allRed{
+  border: 3px solid #DD1F1F;
+}
+.allGreen{
+  border: 3px solid #1CC31C;
+}
+.allBlue{
+  border: 3px solid #0087FF;
+}
+.allPurple{
+  border: 3px solid #A82DEF;
+}
+.allBrown{
+  border: 3px solid #63380b;
+}
+.allYellow{
+  border: 3px solid #EFC82D;
+}
+.allOrange{
+  border: 3px solid #CB5B00;
+}
+.allGray{
+  border: 3px solid #000000;
+}
+.add-bet {
+  margin: 0 auto;
+}
+
+.add-bet button {
+  padding: 8px 12px;
+  margin: 20px;
+  font-weight: bolder;
+}
+
+.add-bet input {
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.secondView {
+  display: none;
+}
+
+.bubanj {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding-top: 40px;
+  font-size: 72px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.loptice-u {
+  text-align: center;
+  margin-top: 25px;
+}
+.bubanj-balls {
+  width: 80px;
+  /* display: inline-block; */
+  height: 80px;
+  border: 3px solid #646464;
+  color: #646464;
+  border-radius: 50%;
+  font-size: 22px;
+  margin: 5px auto;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
